@@ -4231,6 +4231,12 @@
 		(uuid "2394d866-2eb1-4797-8a46-78f82a6a419c")
 	)
 	(junction
+		(at 198.12 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "008e764c-be97-43a5-a387-4b48117e5282")
+	)
+	(junction
 		(at 74.93 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4241,12 +4247,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2fb75ffa-45ed-4875-ac33-82cf586b8dad")
-	)
-	(junction
-		(at 199.39 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3aee8d51-58e3-4081-acc2-cf45d19dc5a9")
 	)
 	(junction
 		(at 109.22 45.72)
@@ -4802,16 +4802,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 96.52) (xy 201.93 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5188bb74-c56a-452a-a4c8-99e5ec3071a5")
-	)
-	(wire
-		(pts
 			(xy 120.65 88.9) (xy 125.73 88.9)
 		)
 		(stroke
@@ -4902,7 +4892,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 99.06) (xy 199.39 99.06)
+			(xy 195.58 99.06) (xy 198.12 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5039,6 +5029,16 @@
 			(type default)
 		)
 		(uuid "7bf9778e-53cf-4261-8679-93e09e444152")
+	)
+	(wire
+		(pts
+			(xy 198.12 96.52) (xy 201.93 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d07a2c2-19dd-4035-8713-0db92f1c2e47")
 	)
 	(wire
 		(pts
@@ -5352,7 +5352,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 99.06) (xy 199.39 96.52)
+			(xy 198.12 99.06) (xy 198.12 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5482,7 +5482,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 96.52) (xy 199.39 96.52)
+			(xy 195.58 96.52) (xy 198.12 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6821,6 +6821,72 @@
 			(project "kicad-mitsubishi-heavy-cns-ac-controller-v1"
 				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 201.93 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ee5fbe3-27e8-4c6c-a7fa-066a426b62f8")
+		(property "Reference" "#PWR09"
+			(at 201.93 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 201.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 201.93 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5da7f2a-0198-4b5d-8cbc-77a545d7965a")
+		)
+		(instances
+			(project "kicad-mitsubishi-heavy-cns-ac-controller-v1"
+				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8464,71 +8530,6 @@
 			(project "kicad-mitsubishi-heavy-cns-ac-controller-v1"
 				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 201.93 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aacc5f5f-3eaa-4748-a5e8-0e8b44dbce1a")
-		(property "Reference" "#PWR015"
-			(at 201.93 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 201.93 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 201.93 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df7331a8-20f7-489d-b509-d5443c76869e")
-		)
-		(instances
-			(project "kicad-mitsubishi-heavy-cns-ac-controller-v1"
-				(path "/f7200693-aa8c-4dc9-bbe2-9e962fa196ea"
-					(reference "#PWR015")
 					(unit 1)
 				)
 			)
