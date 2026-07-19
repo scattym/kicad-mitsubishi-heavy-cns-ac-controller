@@ -7197,7 +7197,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15.8K"
+		(property "Value" "8.2K"
 			(at 88.9 189.2299 0)
 			(effects
 				(font
@@ -7657,7 +7657,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5aba579b-4578-4291-89b2-f446e5a56e44")
 		(property "Reference" "R12"
 			(at 88.9 179.0699 0)
@@ -7668,7 +7667,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "49.9K"
+		(property "Value" "43K"
 			(at 88.9 181.6099 0)
 			(effects
 				(font
